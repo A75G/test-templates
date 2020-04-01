@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>web</Name>
+  <Repository>jitsi/web</Repository>
+  <Registry>https://hub.docker.com/r/jitsi/web/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jitsi/web/</Support>
+  <Project/>
+  <Overview>Jitsi Meet's web interface image </Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1585735028</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Jitsi Meet's web interface image </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jitsi/web/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jitsi/web/letsencrypt/</HostDir>
+      <ContainerDir>/etc/letsencrypt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jitsi/transcripts/</HostDir>
+      <ContainerDir>/usr/share/jitsi-meet/transcripts</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>ENABLE_AUTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ENABLE_GUESTS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ENABLE_LETSENCRYPT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ENABLE_HTTP_REDIRECT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ENABLE_TRANSCRIPTIONS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DISABLE_HTTPS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>JICOFO_AUTH_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>LETSENCRYPT_DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>LETSENCRYPT_EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PUBLIC_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>XMPP_DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>XMPP_BOSH_URL_BASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>XMPP_GUEST_DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>XMPP_MUC_DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>XMPP_RECORDER_DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ETHERPAD_URL_BASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>JIBRI_BREWERY_MUC</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>JIBRI_PENDING_TIMEOUT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>JIBRI_XMPP_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>JIBRI_XMPP_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>JIBRI_RECORDER_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>JIBRI_RECORDER_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ENABLE_RECORDING</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Host Port 2" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="false" Mask="false">4443</Config>
+  <Config Name="Host Path 1" Target="/config" Default="/mnt/user/appdata/jitsi/web/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/web/</Config>
+  <Config Name="Host Path 2" Target="/etc/letsencrypt" Default="/mnt/user/appdata/jitsi/web/letsencrypt/" Mode="rw" Description="Container Path: /etc/letsencrypt" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/web/letsencrypt/</Config>
+  <Config Name="Host Path 3" Target="/usr/share/jitsi-meet/transcripts" Default="/mnt/user/appdata/jitsi/transcripts/" Mode="rw" Description="Container Path: /usr/share/jitsi-meet/transcripts" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/transcripts/</Config>
+  <Config Name="Host Key 1" Target="ENABLE_AUTH" Default="" Mode="" Description="Container Variable: ENABLE_AUTH" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 2" Target="ENABLE_GUESTS" Default="" Mode="" Description="Container Variable: ENABLE_GUESTS" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 3" Target="ENABLE_LETSENCRYPT" Default="" Mode="" Description="Container Variable: ENABLE_LETSENCRYPT" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 4" Target="ENABLE_HTTP_REDIRECT" Default="" Mode="" Description="Container Variable: ENABLE_HTTP_REDIRECT" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 5" Target="ENABLE_TRANSCRIPTIONS" Default="" Mode="" Description="Container Variable: ENABLE_TRANSCRIPTIONS" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 6" Target="DISABLE_HTTPS" Default="" Mode="" Description="Container Variable: DISABLE_HTTPS" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 7" Target="JICOFO_AUTH_USER" Default="" Mode="" Description="Container Variable: JICOFO_AUTH_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 8" Target="LETSENCRYPT_DOMAIN" Default="" Mode="" Description="Container Variable: LETSENCRYPT_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 9" Target="LETSENCRYPT_EMAIL" Default="" Mode="" Description="Container Variable: LETSENCRYPT_EMAIL" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 10" Target="PUBLIC_URL" Default="" Mode="" Description="Container Variable: PUBLIC_URL" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 11" Target="XMPP_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 12" Target="XMPP_BOSH_URL_BASE" Default="" Mode="" Description="Container Variable: XMPP_BOSH_URL_BASE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 13" Target="XMPP_GUEST_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_GUEST_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 14" Target="XMPP_MUC_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_MUC_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 15" Target="XMPP_RECORDER_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_RECORDER_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 16" Target="ETHERPAD_URL_BASE" Default="" Mode="" Description="Container Variable: ETHERPAD_URL_BASE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 18" Target="JIBRI_BREWERY_MUC" Default="" Mode="" Description="Container Variable: JIBRI_BREWERY_MUC" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 19" Target="JIBRI_PENDING_TIMEOUT" Default="" Mode="" Description="Container Variable: JIBRI_PENDING_TIMEOUT" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 20" Target="JIBRI_XMPP_USER" Default="" Mode="" Description="Container Variable: JIBRI_XMPP_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 21" Target="JIBRI_XMPP_PASSWORD" Default="" Mode="" Description="Container Variable: JIBRI_XMPP_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 22" Target="JIBRI_RECORDER_USER" Default="" Mode="" Description="Container Variable: JIBRI_RECORDER_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 23" Target="JIBRI_RECORDER_PASSWORD" Default="" Mode="" Description="Container Variable: JIBRI_RECORDER_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Key 24" Target="ENABLE_RECORDING" Default="" Mode="" Description="Container Variable: ENABLE_RECORDING" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
