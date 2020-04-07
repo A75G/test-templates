@@ -4,7 +4,6 @@
   <Repository>jitsi/web</Repository>
   <Registry>https://hub.docker.com/r/jitsi/web/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/jitsi/web/</Support>
@@ -16,160 +15,9 @@
   <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1585735028</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Jitsi Meet's web interface image </Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8000</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>4443</HostPort>
-        <ContainerPort>443</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/jitsi/web/</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/jitsi/web/letsencrypt/</HostDir>
-      <ContainerDir>/etc/letsencrypt</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/jitsi/transcripts/</HostDir>
-      <ContainerDir>/usr/share/jitsi-meet/transcripts</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value/>
-      <Name>ENABLE_AUTH</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>ENABLE_GUESTS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>ENABLE_LETSENCRYPT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>ENABLE_HTTP_REDIRECT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>ENABLE_TRANSCRIPTIONS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>DISABLE_HTTPS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JICOFO_AUTH_USER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>LETSENCRYPT_DOMAIN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>LETSENCRYPT_EMAIL</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>PUBLIC_URL</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>XMPP_DOMAIN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>XMPP_BOSH_URL_BASE</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>XMPP_GUEST_DOMAIN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>XMPP_MUC_DOMAIN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>XMPP_RECORDER_DOMAIN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>ETHERPAD_URL_BASE</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JIBRI_BREWERY_MUC</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JIBRI_PENDING_TIMEOUT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JIBRI_XMPP_USER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JIBRI_XMPP_PASSWORD</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JIBRI_RECORDER_USER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JIBRI_RECORDER_PASSWORD</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>ENABLE_RECORDING</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
   <Labels/>
   <Config Name="Host Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Host Port 2" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="false" Mask="false">4443</Config>

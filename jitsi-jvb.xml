@@ -4,7 +4,6 @@
   <Repository>jitsi/jvb</Repository>
   <Registry>https://hub.docker.com/r/jitsi/jvb/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/jitsi/jvb/</Support>
@@ -16,94 +15,9 @@
   <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1585736293</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Jitsi Videobridge image for Jitsi Meet   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>9580</HostPort>
-        <ContainerPort>9580</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>9580</HostPort>
-        <ContainerPort>9580</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/jitsi/jvb/</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value/>
-      <Name>DOCKER_HOST_ADDRESS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>XMPP_AUTH_DOMAIN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>XMPP_INTERNAL_MUC_DOMAIN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>XMPP_SERVER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JVB_AUTH_USER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JVB_AUTH_PASSWORD</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JVB_BREWERY_MUC</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>9580</Value>
-      <Name>JVB_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JVB_TCP_HARVESTER_DISABLED</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>9580</Value>
-      <Name>JVB_TCP_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JVB_STUN_SERVERS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>JVB_ENABLE_APIS</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
   <Config Name="JVB_PORT" Target="9580" Default="9580" Mode="udp" Description="Not sure" Type="Port" Display="always" Required="false" Mask="false">9580</Config>
