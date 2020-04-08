@@ -69,5 +69,5 @@
   <Config Name="JWT_AUTH_TYPE" Target="JWT_AUTH_TYPE" Default="token" Mode="" Description="(Optional) Controls which module is used for processing incoming JWTs" Type="Variable" Display="always" Required="false" Mask="false">token</Config>
   <Config Name="JWT_TOKEN_AUTH_MODULE" Target="JWT_TOKEN_AUTH_MODULE" Default="token_verification" Mode="" Description="(Optional) Controls which module is used for validating JWTs" Type="Variable" Display="always" Required="false" Mask="false">token_verification</Config>
   <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="info" Mode="" Description="Controls which logs are output from prosody and associated modules" Type="Variable" Display="always" Required="false" Mask="false">info</Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/prosody" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/prosody</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/prosody/" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/jitsi/prosody/</Config>
 </Container>
