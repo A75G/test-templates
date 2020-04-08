@@ -1,38 +1,36 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>jvb</Name>
-  <Repository>jitsi/jvb</Repository>
+  <Name>jitsi-jvb</Name>
+  <Repository>jitsi/jvb:latest</Repository>
   <Registry>https://hub.docker.com/r/jitsi/jvb/</Registry>
   <Network>bridge</Network>
+  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/jitsi/jvb/</Support>
-  <Project/>
-  <Overview>Jitsi Videobridge image for Jitsi Meet   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
-  <Category/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://jitsi.org/</Project>
+  <Overview>Jitsi Videobridge image for Jitsi Meet</Overview>
+  <Category>Productivity: Network:Voip Network:Messenger</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi-jvb.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>Jitsi Videobridge image for Jitsi Meet   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
-  </Environment>
+  <Description>Jitsi Videobridge image for Jitsi Meet</Description>
   <Labels/>
-  <Config Name="JVB_PORT" Target="9580" Default="9580" Mode="udp" Description="Not sure" Type="Port" Display="always" Required="false" Mask="false">9580</Config>
-  <Config Name="JVB_TCP_PORT" Target="9580" Default="9580" Mode="tcp" Description="Not Sure" Type="Port" Display="always" Required="false" Mask="false">9580</Config>
-  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/jvb/</Config>
-  <Config Name="Host Key 1" Target="DOCKER_HOST_ADDRESS" Default="" Mode="" Description="Container Variable: DOCKER_HOST_ADDRESS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 2" Target="XMPP_AUTH_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_AUTH_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 3" Target="XMPP_INTERNAL_MUC_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_INTERNAL_MUC_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 4" Target="XMPP_SERVER" Default="" Mode="" Description="Container Variable: XMPP_SERVER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 5" Target="JVB_AUTH_USER" Default="" Mode="" Description="Container Variable: JVB_AUTH_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 6" Target="JVB_AUTH_PASSWORD" Default="" Mode="" Description="Container Variable: JVB_AUTH_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 7" Target="JVB_BREWERY_MUC" Default="" Mode="" Description="Container Variable: JVB_BREWERY_MUC" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 8" Target="JVB_PORT" Default="9580" Mode="" Description="Container Variable: JVB_PORT" Type="Variable" Display="always" Required="false" Mask="false">9580</Config>
-  <Config Name="Host Key 9" Target="JVB_TCP_HARVESTER_DISABLED" Default="" Mode="" Description="Container Variable: JVB_TCP_HARVESTER_DISABLED" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 10" Target="JVB_TCP_PORT" Default="" Mode="" Description="Container Variable: JVB_TCP_PORT" Type="Variable" Display="always" Required="false" Mask="false">9580</Config>
-  <Config Name="Host Key 11" Target="JVB_STUN_SERVERS" Default="" Mode="" Description="Container Variable: JVB_STUN_SERVERS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 12" Target="JVB_ENABLE_APIS" Default="" Mode="" Description="Container Variable: JVB_ENABLE_APIS" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="JVB_PORT" Target="10000" Default="10000" Mode="udp" Description="Media port for the Jitsi Videobridge" Type="Port" Display="always" Required="false" Mask="false">10000</Config>
+  <Config Name="JVB_TCP_PORT" Target="4443" Default="4443" Mode="tcp" Description="TCP Fallback for Jitsi Videobridge for when UDP isn&#x2019;t available" Type="Port" Display="always" Required="false" Mask="false">4443</Config>
+  <Config Name="DOCKER_HOST_ADDRESS" Target="DOCKER_HOST_ADDRESS" Default="192.168.1.1" Mode="" Description="IP address of the Docker host, needed for LAN environments" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.1</Config>
+  <Config Name="XMPP_AUTH_DOMAIN" Target="XMPP_AUTH_DOMAIN" Default="auth.meet.jitsi" Mode="" Description="Internal XMPP domain for authenticated services" Type="Variable" Display="always" Required="false" Mask="false">auth.meet.jitsi</Config>
+  <Config Name="XMPP_INTERNAL_MUC_DOMAIN" Target="XMPP_INTERNAL_MUC_DOMAIN" Default="internal-muc.meet.jitsi" Mode="" Description="XMPP domain for the internal MUC" Type="Variable" Display="always" Required="false" Mask="false">internal-muc.meet.jitsi</Config>
+  <Config Name="XMPP_SERVER" Target="XMPP_SERVER" Default="xmpp.meet.jitsi" Mode="" Description="Internal XMPP server name xmpp.meet.jitsi" Type="Variable" Display="always" Required="false" Mask="false">xmpp.meet.jitsi</Config>
+  <Config Name="JVB_AUTH_USER" Target="JVB_AUTH_USER" Default="jvb" Mode="" Description="XMPP user for JVB MUC client connections" Type="Variable" Display="always" Required="false" Mask="false">jvb</Config>
+  <Config Name="JVB_AUTH_PASSWORD" Target="JVB_AUTH_PASSWORD" Default="passw0rd" Mode="" Description="XMPP password for JVB MUC client connections" Type="Variable" Display="always" Required="false" Mask="false">passw0rd</Config>
+  <Config Name="JVB_BREWERY_MUC" Target="JVB_BREWERY_MUC" Default="jvbbrewery" Mode="" Description="MUC name for the JVB pool" Type="Variable" Display="always" Required="false" Mask="false">jvbbrewery</Config>
+  <Config Name="JVB_TCP_HARVESTER_DISABLED" Target="JVB_TCP_HARVESTER_DISABLED" Default="true" Mode="" Description="Disable the additional harvester which allows video over TCP (rather than just UDP)" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="JVB_STUN_SERVERS" Target="JVB_STUN_SERVERS" Default="stun.l.google.com:19302, stun1.l.google.com:19302, stun2.l.google.com:19302" Mode="" Description="STUN servers used to discover the server's public IP" Type="Variable" Display="always" Required="false" Mask="false">stun.l.google.com:19302, stun1.l.google.com:19302, stun2.l.google.com:19302</Config>
+  <Config Name="JVB_ENABLE_APIS" Target="JVB_ENABLE_APIS" Default="none" Mode="" Description="Comma separated list of JVB APIs to enable" Type="Variable" Display="always" Required="false" Mask="false">none</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jvb" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/jvb</Config>
 </Container>

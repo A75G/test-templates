@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>jicofo</Name>
-  <Repository>jitsi/jicofo</Repository>
+  <Name>jitsi-jicofo</Name>
+  <Repository>jitsi/jicofo:latest</Repository>
   <Registry>https://hub.docker.com/r/jitsi/jicofo/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/jitsi/jicofo/</Support>
-  <Project/>
-  <Overview>Jicofo image for Jitsi Meet   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
-  <Category/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://jitsi.org/</Project>
+  <Overview>Jicofo image for Jitsi Meet</Overview>
+  <Category>Productivity: Network:Voip Network:Messenger</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi-jicofo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>Jicofo image for Jitsi Meet   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Description>Jicofo image for Jitsi Meet</Description>
   <Labels/>
-  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/jicofo/</Config>
-  <Config Name="Host Key 1" Target="ENABLE_AUTH" Default="" Mode="" Description="Container Variable: ENABLE_AUTH" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 2" Target="XMPP_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 3" Target="XMPP_AUTH_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_AUTH_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 4" Target="XMPP_INTERNAL_MUC_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_INTERNAL_MUC_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 5" Target="XMPP_SERVER" Default="" Mode="" Description="Container Variable: XMPP_SERVER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 6" Target="JICOFO_COMPONENT_SECRET" Default="" Mode="" Description="Container Variable: JICOFO_COMPONENT_SECRET" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 7" Target="JICOFO_AUTH_USER" Default="" Mode="" Description="Container Variable: JICOFO_AUTH_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 8" Target="JICOFO_AUTH_PASSWORD" Default="" Mode="" Description="Container Variable: JICOFO_AUTH_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 9" Target="JICOFO_RESERVATION_REST_BASE_URL" Default="" Mode="" Description="Container Variable: JICOFO_RESERVATION_REST_BASE_URL" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 10" Target="JVB_BREWERY_MUC" Default="" Mode="" Description="Container Variable: JVB_BREWERY_MUC" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 11" Target="JIGASI_BREWERY_MUC" Default="" Mode="" Description="Container Variable: JIGASI_BREWERY_MUC" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 12" Target="JIGASI_SIP_URI" Default="" Mode="" Description="Container Variable: JIGASI_SIP_URI" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 13" Target="JIBRI_BREWERY_MUC" Default="" Mode="" Description="Container Variable: JIBRI_BREWERY_MUC" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 14" Target="JIBRI_PENDING_TIMEOUT" Default="" Mode="" Description="Container Variable: JIBRI_PENDING_TIMEOUT" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="ENABLE_AUTH" Target="ENABLE_AUTH" Default="1" Mode="" Description="Enable authentication" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="XMPP_DOMAIN" Target="XMPP_DOMAIN" Default="meet.jitsi" Mode="" Description="Internal XMPP domain" Type="Variable" Display="always" Required="false" Mask="false">meet.jitsi</Config>
+  <Config Name="XMPP_AUTH_DOMAIN" Target="XMPP_AUTH_DOMAIN" Default="auth.meet.jitsi" Mode="" Description="Internal XMPP domain for authenticated services" Type="Variable" Display="always" Required="false" Mask="false">auth.meet.jitsi</Config>
+  <Config Name="XMPP_INTERNAL_MUC_DOMAIN" Target="XMPP_INTERNAL_MUC_DOMAIN" Default="internal-muc.meet.jitsi" Mode="" Description="XMPP domain for the internal MUC" Type="Variable" Display="always" Required="false" Mask="false">internal-muc.meet.jitsi</Config>
+  <Config Name="XMPP_SERVER" Target="XMPP_SERVER" Default="xmpp.meet.jitsi" Mode="" Description="Internal XMPP server name xmpp.meet.jitsi" Type="Variable" Display="always" Required="false" Mask="false">xmpp.meet.jitsi</Config>
+  <Config Name="JICOFO_COMPONENT_SECRET" Target="JICOFO_COMPONENT_SECRET" Default="s3cr37" Mode="" Description="XMPP component password for Jicofo" Type="Variable" Display="always" Required="false" Mask="false">s3cr37</Config>
+  <Config Name="JICOFO_AUTH_USER" Target="JICOFO_AUTH_USER" Default="focus" Mode="" Description="XMPP user for Jicofo client connections" Type="Variable" Display="always" Required="false" Mask="false">focus</Config>
+  <Config Name="JICOFO_AUTH_PASSWORD" Target="JICOFO_AUTH_PASSWORD" Default="passw0rd" Mode="" Description="XMPP password for Jicofo client connections" Type="Variable" Display="always" Required="false" Mask="false">passw0rd</Config>
+  <Config Name="JICOFO_RESERVATION_REST_BASE_URL" Target="JICOFO_RESERVATION_REST_BASE_URL" Default="http://reservation.example.com" Mode="" Description="Base URL of Jicofo&#x2019;s reservation REST API" Type="Variable" Display="always" Required="false" Mask="false">http://reservation.example.com</Config>
+  <Config Name="JVB_BREWERY_MUC" Target="JVB_BREWERY_MUC" Default="jvbbrewery" Mode="" Description="MUC name for the JVB pool" Type="Variable" Display="always" Required="false" Mask="false">jvbbrewery</Config>
+  <Config Name="JIGASI_BREWERY_MUC" Target="JIGASI_BREWERY_MUC" Default="jigasibrewery" Mode="" Description="MUC name for the Jigasi pool" Type="Variable" Display="always" Required="false" Mask="false">jigasibrewery</Config>
+  <Config Name="JIGASI_SIP_URI" Target="JIGASI_SIP_URI" Default="test@sip2sip.info" Mode="" Description="SIP URI for incoming / outgoing calls" Type="Variable" Display="always" Required="false" Mask="false">test@sip2sip.info</Config>
+  <Config Name="JIBRI_BREWERY_MUC" Target="JIBRI_BREWERY_MUC" Default="jibribrewery" Mode="" Description="MUC name for the Jibri pool" Type="Variable" Display="always" Required="false" Mask="false">jibribrewery</Config>
+  <Config Name="JIBRI_PENDING_TIMEOUT" Target="JIBRI_PENDING_TIMEOUT" Default="90" Mode="" Description="MUC connection timeout" Type="Variable" Display="always" Required="false" Mask="false">90</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jicofo" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/jicofo</Config>
 </Container>

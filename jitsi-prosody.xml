@@ -1,73 +1,73 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>prosody</Name>
-  <Repository>jitsi/prosody</Repository>
+  <Name>jitsi-prosody</Name>
+  <Repository>jitsi/prosody:latest</Repository>
   <Registry>https://hub.docker.com/r/jitsi/prosody/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/jitsi/prosody/</Support>
-  <Project/>
-  <Overview>Prosody image for Jitsi Meet   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
-  <Category/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://jitsi.org/</Project>
+  <Overview>Prosody image for Jitsi Meet </Overview>
+  <Category>Productivity: Network:Voip Network:Messenger</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi-prosody.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>Prosody image for Jitsi Meet   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Description>Prosody image for Jitsi Meet </Description>
   <Labels/>
-  <Config Name="Host Port 1" Target="5222" Default="5222" Mode="tcp" Description="Container Port: 5222" Type="Port" Display="always" Required="false" Mask="false">5222</Config>
-  <Config Name="Host Port 2" Target="5347" Default="5347" Mode="tcp" Description="Container Port: 5347" Type="Port" Display="always" Required="false" Mask="false">5347</Config>
-  <Config Name="Host Port 3" Target="5280" Default="5280" Mode="tcp" Description="Container Port: 5280" Type="Port" Display="always" Required="false" Mask="false">5280</Config>
-  <Config Name="Host Path 1" Target="/config" Default="/mnt/user/appdata/jitsi/prosody/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/prosody/</Config>
-  <Config Name="Host Key 1" Target="AUTH_TYPE" Default="" Mode="" Description="Container Variable: AUTH_TYPE" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 2" Target="ENABLE_AUTH" Default="" Mode="" Description="Container Variable: ENABLE_AUTH" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 3" Target="ENABLE_GUESTS" Default="" Mode="" Description="Container Variable: ENABLE_GUESTS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 4" Target="GLOBAL_MODULES" Default="" Mode="" Description="Container Variable: GLOBAL_MODULES" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 5" Target="GLOBAL_CONFIG" Default="" Mode="" Description="Container Variable: GLOBAL_CONFIG" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 6" Target="LDAP_URL" Default="" Mode="" Description="Container Variable: LDAP_URL" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 7" Target="LDAP_BASE" Default="" Mode="" Description="Container Variable: LDAP_BASE" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 8" Target="LDAP_BINDDN" Default="" Mode="" Description="Container Variable: LDAP_BINDDN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 9" Target="LDAP_BINDPW" Default="" Mode="" Description="Container Variable: LDAP_BINDPW" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 10" Target="LDAP_FILTER" Default="" Mode="" Description="Container Variable: LDAP_FILTER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 11" Target="LDAP_AUTH_METHOD" Default="" Mode="" Description="Container Variable: LDAP_AUTH_METHOD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 12" Target="LDAP_VERSION" Default="" Mode="" Description="Container Variable: LDAP_VERSION" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 13" Target="LDAP_USE_TLS" Default="" Mode="" Description="Container Variable: LDAP_USE_TLS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 14" Target="LDAP_TLS_CIPHERS" Default="" Mode="" Description="Container Variable: LDAP_TLS_CIPHERS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 15" Target="LDAP_TLS_CHECK_PEER" Default="" Mode="" Description="Container Variable: LDAP_TLS_CHECK_PEER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 16" Target="LDAP_TLS_CACERT_FILE" Default="" Mode="" Description="Container Variable: LDAP_TLS_CACERT_FILE" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 17" Target="LDAP_TLS_CACERT_DIR" Default="" Mode="" Description="Container Variable: LDAP_TLS_CACERT_DIR" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 18" Target="LDAP_START_TLS" Default="" Mode="" Description="Container Variable: LDAP_START_TLS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 19" Target="XMPP_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 20" Target="XMPP_AUTH_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_AUTH_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 21" Target="XMPP_GUEST_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_GUEST_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 22" Target="XMPP_MUC_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_MUC_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 23" Target="XMPP_INTERNAL_MUC_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_INTERNAL_MUC_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 24" Target="XMPP_MODULES" Default="" Mode="" Description="Container Variable: XMPP_MODULES" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 25" Target="XMPP_MUC_MODULES" Default="" Mode="" Description="Container Variable: XMPP_MUC_MODULES" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 26" Target="XMPP_INTERNAL_MUC_MODULES" Default="" Mode="" Description="Container Variable: XMPP_INTERNAL_MUC_MODULES" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 27" Target="XMPP_RECORDER_DOMAIN" Default="" Mode="" Description="Container Variable: XMPP_RECORDER_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 28" Target="JICOFO_COMPONENT_SECRET" Default="" Mode="" Description="Container Variable: JICOFO_COMPONENT_SECRET" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 29" Target="JICOFO_AUTH_USER" Default="" Mode="" Description="Container Variable: JICOFO_AUTH_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 30" Target="JICOFO_AUTH_PASSWORD" Default="" Mode="" Description="Container Variable: JICOFO_AUTH_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 31" Target="JVB_AUTH_USER" Default="" Mode="" Description="Container Variable: JVB_AUTH_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 32" Target="JVB_AUTH_PASSWORD" Default="" Mode="" Description="Container Variable: JVB_AUTH_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 33" Target="JIGASI_XMPP_USER" Default="" Mode="" Description="Container Variable: JIGASI_XMPP_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 34" Target="JIGASI_XMPP_PASSWORD" Default="" Mode="" Description="Container Variable: JIGASI_XMPP_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 35" Target="JIBRI_XMPP_USER" Default="" Mode="" Description="Container Variable: JIBRI_XMPP_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 36" Target="JIBRI_XMPP_PASSWORD" Default="" Mode="" Description="Container Variable: JIBRI_XMPP_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 37" Target="JIBRI_RECORDER_USER" Default="" Mode="" Description="Container Variable: JIBRI_RECORDER_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 38" Target="JIBRI_RECORDER_PASSWORD" Default="" Mode="" Description="Container Variable: JIBRI_RECORDER_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 39" Target="JWT_APP_ID" Default="" Mode="" Description="Container Variable: JWT_APP_ID" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 40" Target="JWT_APP_SECRET" Default="" Mode="" Description="Container Variable: JWT_APP_SECRET" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 41" Target="JWT_ACCEPTED_ISSUERS" Default="" Mode="" Description="Container Variable: JWT_ACCEPTED_ISSUERS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 42" Target="JWT_ACCEPTED_AUDIENCES" Default="" Mode="" Description="Container Variable: JWT_ACCEPTED_AUDIENCES" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 43" Target="JWT_ASAP_KEYSERVER" Default="" Mode="" Description="Container Variable: JWT_ASAP_KEYSERVER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 44" Target="JWT_ALLOW_EMPTY" Default="" Mode="" Description="Container Variable: JWT_ALLOW_EMPTY" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 45" Target="JWT_AUTH_TYPE" Default="" Mode="" Description="Container Variable: JWT_AUTH_TYPE" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 46" Target="JWT_TOKEN_AUTH_MODULE" Default="" Mode="" Description="Container Variable: JWT_TOKEN_AUTH_MODULE" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 47" Target="LOG_LEVEL" Default="" Mode="" Description="Container Variable: LOG_LEVEL" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Port 1" Target="5222" Default="5222" Mode="tcp" Description="Container Port: 5222" Type="Port" Display="always" Required="false" Mask="false">5222</Config>
+  <Config Name="Port 2" Target="5347" Default="5347" Mode="tcp" Description="Container Port: 5347" Type="Port" Display="always" Required="false" Mask="false">5347</Config>
+  <Config Name="Port 3" Target="5280" Default="5280" Mode="tcp" Description="Container Port: 5280" Type="Port" Display="always" Required="false" Mask="false">5280</Config>
+  <Config Name="AUTH_TYPE" Target="AUTH_TYPE" Default="internal" Mode="" Description="Select authentication type (internal, jwt or ldap)" Type="Variable" Display="always" Required="false" Mask="false">internal</Config>
+  <Config Name="ENABLE_AUTH" Target="ENABLE_AUTH" Default="1" Mode="" Description="Enable authentication" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="ENABLE_GUESTS" Target="ENABLE_GUESTS" Default="1" Mode="" Description="Enable guest access" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="GLOBAL_MODULES" Target="GLOBAL_MODULES" Default="statistics,alert" Mode="" Description="Custom prosody modules to load in global configuration (comma separated)" Type="Variable" Display="always" Required="false" Mask="false">statistics,alert</Config>
+  <Config Name="GLOBAL_CONFIG" Target="GLOBAL_CONFIG" Default="foo = bar;\nkey = val;" Mode="" Description="Custom configuration string with escaped newlines" Type="Variable" Display="always" Required="false" Mask="false">foo = bar;\nkey = val;</Config>
+  <Config Name="LDAP_URL" Target="LDAP_URL" Default="ldaps://ldap.domain.com/" Mode="" Description="URL for ldap connection" Type="Variable" Display="always" Required="false" Mask="false">ldaps://ldap.domain.com/</Config>
+  <Config Name="LDAP_BASE" Target="LDAP_BASE" Default="DC=example,DC=domain,DC=com" Mode="" Description="LDAP base DN. Can be empty." Type="Variable" Display="always" Required="false" Mask="false">DC=example,DC=domain,DC=com</Config>
+  <Config Name="LDAP_BINDDN" Target="LDAP_BINDDN" Default="CN=binduser,OU=users,DC=example,DC=domain,DC=com" Mode="" Description="LDAP user DN. Do not specify this parameter for the anonymous bind." Type="Variable" Display="always" Required="false" Mask="false">CN=binduser,OU=users,DC=example,DC=domain,DC=com</Config>
+  <Config Name="LDAP_BINDPW" Target="LDAP_BINDPW" Default="LdapUserPassw0rd" Mode="" Description="LDAP user password. Do not specify this parameter for the anonymous bind." Type="Variable" Display="always" Required="false" Mask="false">LdapUserPassw0rd</Config>
+  <Config Name="LDAP_FILTER" Target="LDAP_FILTER" Default="(sAMAccountName=%u)" Mode="" Description="LDAP filter." Type="Variable" Display="always" Required="false" Mask="false">(sAMAccountName=%u)</Config>
+  <Config Name="LDAP_AUTH_METHOD" Target="LDAP_AUTH_METHOD" Default="bind" Mode="" Description="LDAP authentication method." Type="Variable" Display="always" Required="false" Mask="false">bind</Config>
+  <Config Name="LDAP_VERSION" Target="LDAP_VERSION" Default="3" Mode="" Description="LDAP protocol version" Type="Variable" Display="always" Required="false" Mask="false">3</Config>
+  <Config Name="LDAP_USE_TLS" Target="LDAP_USE_TLS" Default="1" Mode="" Description="Enable LDAP TLS" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="LDAP_TLS_CIPHERS" Target="LDAP_TLS_CIPHERS" Default="SECURE256:SECURE128" Mode="" Description="Set TLS ciphers list to allow" Type="Variable" Display="always" Required="false" Mask="false">SECURE256:SECURE128</Config>
+  <Config Name="LDAP_TLS_CHECK_PEER" Target="LDAP_TLS_CHECK_PEER" Default="1" Mode="" Description="Require and verify LDAP server certificate" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="LDAP_TLS_CACERT_FILE" Target="LDAP_TLS_CACERT_FILE" Default="/etc/ssl/certs/ca-certificates.crt" Mode="" Description="Path to CA cert file. Used when server certificate verification is enabled" Type="Variable" Display="always" Required="false" Mask="false">/etc/ssl/certs/ca-certificates.crt</Config>
+  <Config Name="LDAP_TLS_CACERT_DIR" Target="LDAP_TLS_CACERT_DIR" Default="/etc/ssl/certs" Mode="" Description="Path to CA certs directory. Used when server certificate verification is enabled." Type="Variable" Display="always" Required="false" Mask="false">/etc/ssl/certs</Config>
+  <Config Name="LDAP_START_TLS" Target="LDAP_START_TLS" Default="0" Mode="" Description="Enable START_TLS, requires LDAPv3, URL must be ldap:// not ldaps://" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="XMPP_DOMAIN" Target="XMPP_DOMAIN" Default="meet.jitsi" Mode="" Description="Internal XMPP domain" Type="Variable" Display="always" Required="false" Mask="false">meet.jitsi</Config>
+  <Config Name="auth.meet.jitsi" Target="XMPP_AUTH_DOMAIN" Default="auth.meet.jitsi" Mode="" Description="Internal XMPP domain for authenticated services" Type="Variable" Display="always" Required="false" Mask="false">auth.meet.jitsi</Config>
+  <Config Name="XMPP_GUEST_DOMAIN" Target="XMPP_GUEST_DOMAIN" Default="guest.meet.jitsi" Mode="" Description="XMPP domain for unauthenticated users" Type="Variable" Display="always" Required="false" Mask="false">guest.meet.jitsi</Config>
+  <Config Name="XMPP_MUC_DOMAIN" Target="XMPP_MUC_DOMAIN" Default="muc.meet.jitsi" Mode="" Description="XMPP domain for the MUC" Type="Variable" Display="always" Required="false" Mask="false">muc.meet.jitsi</Config>
+  <Config Name="XMPP_INTERNAL_MUC_DOMAIN" Target="XMPP_INTERNAL_MUC_DOMAIN" Default="internal-muc.meet.jitsi" Mode="" Description="XMPP domain for the internal MUC" Type="Variable" Display="always" Required="false" Mask="false">internal-muc.meet.jitsi</Config>
+  <Config Name="XMPP_MODULES" Target="XMPP_MODULES" Default="info,alert" Mode="" Description="Custom Prosody modules for XMPP_DOMAIN (comma separated)" Type="Variable" Display="always" Required="false" Mask="false">info,alert</Config>
+  <Config Name="XMPP_MUC_MODULES" Target="XMPP_MUC_MODULES" Default="info,alert" Mode="" Description="Custom Prosody modules for MUC component (comma separated)" Type="Variable" Display="always" Required="false" Mask="false">info,alert</Config>
+  <Config Name="XMPP_INTERNAL_MUC_MODULES" Target="XMPP_INTERNAL_MUC_MODULES" Default="info,alert" Mode="" Description="Custom Prosody modules for internal MUC component (comma separated)" Type="Variable" Display="always" Required="false" Mask="false">info,alert</Config>
+  <Config Name="XMPP_RECORDER_DOMAIN" Target="XMPP_RECORDER_DOMAIN" Default="recorder.meet.jitsi" Mode="" Description="Domain for the jibri recorder" Type="Variable" Display="always" Required="false" Mask="false">recorder.meet.jitsi</Config>
+  <Config Name="JICOFO_COMPONENT_SECRET" Target="JICOFO_COMPONENT_SECRET" Default="s3cr37" Mode="" Description="XMPP component password for Jicofo" Type="Variable" Display="always" Required="false" Mask="false">s3cr37</Config>
+  <Config Name="JICOFO_AUTH_USER" Target="JICOFO_AUTH_USER" Default="focus" Mode="" Description="XMPP user for Jicofo client connections" Type="Variable" Display="always" Required="false" Mask="false">focus</Config>
+  <Config Name="JICOFO_AUTH_PASSWORD" Target="JICOFO_AUTH_PASSWORD" Default="passw0rd" Mode="" Description="XMPP password for Jicofo client connections" Type="Variable" Display="always" Required="false" Mask="false">passw0rd</Config>
+  <Config Name="JVB_AUTH_USER" Target="JVB_AUTH_USER" Default="jvb" Mode="" Description="XMPP user for JVB MUC client connections" Type="Variable" Display="always" Required="false" Mask="false">jvb</Config>
+  <Config Name="JVB_AUTH_PASSWORD" Target="JVB_AUTH_PASSWORD" Default="passw0rd" Mode="" Description="XMPP password for JVB MUC client connections" Type="Variable" Display="always" Required="false" Mask="false">passw0rd</Config>
+  <Config Name="JIGASI_XMPP_USER" Target="JIGASI_XMPP_USER" Default="jigasi" Mode="" Description="XMPP user for Jigasi MUC client connections" Type="Variable" Display="always" Required="false" Mask="false">jigasi</Config>
+  <Config Name="JIGASI_XMPP_PASSWORD" Target="JIGASI_XMPP_PASSWORD" Default="passw0rd" Mode="" Description="XMPP password for Jigasi MUC client connections" Type="Variable" Display="always" Required="false" Mask="false">passw0rd</Config>
+  <Config Name="JIBRI_XMPP_USER" Target="JIBRI_XMPP_USER" Default="jibri" Mode="" Description="Internal user for Jibri client connections." Type="Variable" Display="always" Required="false" Mask="false">jibri</Config>
+  <Config Name="JIBRI_XMPP_PASSWORD" Target="JIBRI_XMPP_PASSWORD" Default="passw0rd" Mode="" Description="Internal password for Jibri client connections." Type="Variable" Display="always" Required="false" Mask="false">passw0rd</Config>
+  <Config Name="JIBRI_RECORDER_USER" Target="JIBRI_RECORDER_USER" Default="recorder" Mode="" Description="Internal recorder user for Jibri client connections" Type="Variable" Display="always" Required="false" Mask="false">recorder</Config>
+  <Config Name="JIBRI_RECORDER_PASSWORD" Target="JIBRI_RECORDER_PASSWORD" Default="passw0rd" Mode="" Description="Internal recorder password for Jibri client connections" Type="Variable" Display="always" Required="false" Mask="false">passw0rd</Config>
+  <Config Name="JWT_APP_ID" Target="JWT_APP_ID" Default="my_jitsi_app_id" Mode="" Description="Application identifier" Type="Variable" Display="always" Required="false" Mask="false">my_jitsi_app_id</Config>
+  <Config Name="JWT_APP_SECRET" Target="JWT_APP_SECRET" Default="my_jitsi_app_secret" Mode="" Description="Application secret known only to your token" Type="Variable" Display="always" Required="false" Mask="false">my_jitsi_app_secret</Config>
+  <Config Name="JWT_ACCEPTED_ISSUERS" Target="JWT_ACCEPTED_ISSUERS" Default="my_web_client,my_app_client" Mode="" Description="(Optional) Set asap_accepted_issuers as a comma separated list" Type="Variable" Display="always" Required="false" Mask="false">my_web_client,my_app_client</Config>
+  <Config Name="JWT_ACCEPTED_AUDIENCES" Target="JWT_ACCEPTED_AUDIENCES" Default="my_server1,my_server2" Mode="" Description="(Optional) Set asap_accepted_audiences as a comma separated list" Type="Variable" Display="always" Required="false" Mask="false">my_server1,my_server2</Config>
+  <Config Name="JWT_ASAP_KEYSERVER" Target="JWT_ASAP_KEYSERVER" Default="https://example.com/asap" Mode="" Description="(Optional) Set asap_keyserver to a url where public keys can be found" Type="Variable" Display="always" Required="false" Mask="false">https://example.com/asap</Config>
+  <Config Name="JWT_ALLOW_EMPTY" Target="JWT_ALLOW_EMPTY" Default="0" Mode="" Description="(Optional) Allow anonymous users with no JWT while validating JWTs when provided" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="JWT_AUTH_TYPE" Target="JWT_AUTH_TYPE" Default="token" Mode="" Description="(Optional) Controls which module is used for processing incoming JWTs" Type="Variable" Display="always" Required="false" Mask="false">token</Config>
+  <Config Name="JWT_TOKEN_AUTH_MODULE" Target="JWT_TOKEN_AUTH_MODULE" Default="token_verification" Mode="" Description="(Optional) Controls which module is used for validating JWTs" Type="Variable" Display="always" Required="false" Mask="false">token_verification</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="info" Mode="" Description="Controls which logs are output from prosody and associated modules" Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/prosody" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/prosody</Config>
 </Container>
