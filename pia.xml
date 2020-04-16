@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>private-internet-access</Name>
+  <Repository>qmcgaw/private-internet-access:latest</Repository>
+  <Registry>https://hub.docker.com/r/qmcgaw/private-internet-access/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://hub.docker.com/r/qmcgaw/private-internet-access/</Support>
+  <Project/>
+  <Overview>VPN client container to private internet access servers based on Alpine and OpenVPN.</Overview>
+  <Category>Security: Network:DNS Network:Proxy Network:VPN</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1587050932</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>VPN client container to private internet access servers based on Alpine and OpenVPN.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8888</HostPort>
+        <ContainerPort>8888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8388</HostPort>
+        <ContainerPort>8388</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pia/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>8388</Value>
+      <Name>8388</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>private internet access</Value>
+      <Name>VPNSP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Austria</Value>
+      <Name>REGION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Sweden</Value>
+      <Name>COUNTRY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>CITY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ISP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>udp</Value>
+      <Name>PROTOCOL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>strong</Value>
+      <Name>PIA_ENCRYPTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on</Value>
+      <Name>DOT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>cloudflare</Value>
+      <Name>DOT_PROVIDERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on</Value>
+      <Name>DOT_CACHING</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on</Value>
+      <Name>DOT_IPV6</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.0.0/24</Value>
+      <Name>DOT_PRIVATE_ADDRESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on</Value>
+      <Name>BLOCK_MALICIOUS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on</Value>
+      <Name>BLOCK_SURVEILLANCE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on</Value>
+      <Name>BLOCK_ADS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>UNBLOCK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>EXTRA_SUBNETS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>off</Value>
+      <Name>PORT_FORWARDING</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/data/forwarded_port</Value>
+      <Name>PORT_FORWARDING_STATUS_FILE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/data/ip</Value>
+      <Name>IP_STATUS_FILE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on</Value>
+      <Name>TINYPROXY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8888</Value>
+      <Name>TINYPROXY_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>user</Value>
+      <Name>TINYPROXY_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>TINYPROXY_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on</Value>
+      <Name>SHADOWSOCKS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8388</Value>
+      <Name>SHADOWSOCKS_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>SHADOWSOCKS_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>chacha20-ietf-poly1305</Value>
+      <Name>SHADOWSOCKS_METHOD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>no</Value>
+      <Name>OPENVPN_ROOT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>OPENVPN_TARGET_IP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>OPENVPN_CIPHER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>DOT_VERBOSITY_DETAILS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>DOT_VERBOSITY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>OPENVPN_VERBOSITY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Info</Value>
+      <Name>TINYPROXY_LOG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>UID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>GID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>DOT_VALIDATION_LOGLEVEL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>off</Value>
+      <Name>SHADOWSOCKS_LOG</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="HTTP Web Proxy" Target="8888" Default="8888" Mode="tcp" Description="HTTP Web Proxy" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
+  <Config Name="SOCKS5 Proxy TCP" Target="8388" Default="8388" Mode="tcp" Description="SOCKS5 Proxy TCP" Type="Port" Display="always" Required="false" Mask="false">8388</Config>
+  <Config Name="SOCKS5 Proxy UDP" Target="8388" Default="8388" Mode="" Description="SOCKS5 Proxy UDP" Type="Variable" Display="always" Required="false" Mask="false">8388</Config>
+  <Config Name="VPN Service Provider" Target="VPNSP" Default="private internet access|mullvad|windscribe" Mode="" Description="VPN Service Provider" Type="Variable" Display="always" Required="true" Mask="false">private internet access</Config>
+  <Config Name="REGION" Target="REGION" Default="Austria" Mode="" Description="One of the PIA regions or of the Windscribe regions. (Not Supported Mullvad) https://www.privateinternetaccess.com/pages/network/&#13;&#10;https://windscribe.com/status" Type="Variable" Display="always" Required="true" Mask="false">Austria</Config>
+  <Config Name="COUNTRY" Target="COUNTRY" Default="Sweden" Mode="" Description="One of the Mullvad countries https://mullvad.net/en/servers/#openvpn (Mullvad Only)" Type="Variable" Display="always" Required="false" Mask="false">Sweden</Config>
+  <Config Name="CITY" Target="CITY" Default="" Mode="" Description="One of the Mullvad cities https://mullvad.net/en/servers/#/openvpn (Mullvad Only)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="ISP" Target="ISP" Default="" Mode="" Description="One of the Mullvad ISP https://mullvad.net/en/servers/#/openvpn (Mullvad Only)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PORT" Target="PORT" Default="" Mode="" Description="Mullvad: 80 or 443 for TCP; or 53 for UDP. Leave blank for default Mullvad server port. Windscribe see this list of ports https://windscribe.com/getconfig/openvpn (Not Supported Mullvad)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PROTOCOL" Target="PROTOCOL" Default="udp|tcp" Mode="" Description="Network protocol to use" Type="Variable" Display="always" Required="true" Mask="false">udp</Config>
+  <Config Name="PIA_ENCRYPTION" Target="PIA_ENCRYPTION" Default="strong|normal" Mode="" Description="Encryption preset (PIA Only)" Type="Variable" Display="always" Required="true" Mask="false">strong</Config>
+  <Config Name="USER" Target="USER" Default="" Mode="" Description="PIA/Windscribe username or Mullvad user ID" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="PIA/Windscribe password (Not Supported Mullvad)" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="DNS over TLS" Target="DOT" Default="on|off" Mode="" Description="DNS over TLS" Type="Variable" Display="always" Required="true" Mask="false">on</Config>
+  <Config Name="DNS over TLS providers" Target="DOT_PROVIDERS" Default="cloudflare|google|quad9|quadrant|cleanbrowsin|securedns|libredns" Mode="" Description="DNS over TLS providers" Type="Variable" Display="always" Required="true" Mask="false">cloudflare</Config>
+  <Config Name="DNS over TLS Unbound" Target="DOT_CACHING" Default="on|off" Mode="" Description="DNS over TLS Unbound caching" Type="Variable" Display="always" Required="true" Mask="false">on</Config>
+  <Config Name="DNS over TLS IPv6" Target="DOT_IPV6" Default="on|off" Mode="" Description="DNS over TLS IPv6 resolution" Type="Variable" Display="always" Required="true" Mask="false">on</Config>
+  <Config Name="DOT_PRIVATE_ADDRESS" Target="DOT_PRIVATE_ADDRESS" Default="192.168.0.0/24" Mode="" Description="Comma separated list of CIDRs or single IP addresses Unbound won't resolve to. Note that the default setting prevents DNS rebinding" Type="Variable" Display="always" Required="true" Mask="false">192.168.0.0/24</Config>
+  <Config Name="BLOCK_MALICIOUS" Target="BLOCK_MALICIOUS" Default="on|off" Mode="" Description="Block malicious hostnames and IPs with Unbound DNS over TLS" Type="Variable" Display="always" Required="true" Mask="false">on</Config>
+  <Config Name="BLOCK_SURVEILLANCE" Target="BLOCK_SURVEILLANCE" Default="on|off" Mode="" Description="Block surveillance hostnames and IPs with Unbound DNS over TLS" Type="Variable" Display="always" Required="true" Mask="false">on</Config>
+  <Config Name="BLOCK_ADS" Target="BLOCK_ADS" Default="off|on" Mode="" Description="Block ads hostnames and IPs with Unbound DNS over TLS" Type="Variable" Display="always" Required="true" Mask="false">on</Config>
+  <Config Name="UNBLOCK" Target="UNBLOCK" Default="" Mode="" Description="Comma separated list of domain names to leave unblocked. In example domain1.com,x.domain2.co.uk" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="EXTRA_SUBNETS" Target="EXTRA_SUBNETS" Default="" Mode="" Description="Comma separated subnets allowed in the container firewall. In example 192.168.1.0/24,192.168.10.121,10.0.0.5/28" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PORT_FORWARDING" Target="PORT_FORWARDING" Default="off|on" Mode="" Description="Enable port forwarding on the VPN server (Only PIA)" Type="Variable" Display="always" Required="true" Mask="false">off</Config>
+  <Config Name="PORT_FORWARDING_STATUS_FILE" Target="PORT_FORWARDING_STATUS_FILE" Default="/forwarded_port" Mode="" Description="File path to store the forwarded port number (Only PIA)" Type="Variable" Display="always" Required="true" Mask="false">/data/forwarded_port</Config>
+  <Config Name="IP_STATUS_FILE" Target="IP_STATUS_FILE" Default="/ip" Mode="" Description="File path to store the public IP address assigned" Type="Variable" Display="always" Required="true" Mask="false">/data/ip</Config>
+  <Config Name="TINYPROXY" Target="TINYPROXY" Default="off|on" Mode="" Description="Enable the internal HTTP proxy tinyproxy" Type="Variable" Display="always" Required="true" Mask="false">on</Config>
+  <Config Name="TINYPROXY_PORT" Target="TINYPROXY_PORT" Default="8888" Mode="" Description="Internal port number for Tinyproxy to listen on" Type="Variable" Display="always" Required="true" Mask="false">8888</Config>
+  <Config Name="TINYPROXY_USER" Target="TINYPROXY_USER" Default="user" Mode="" Description="Username to use to connect to the HTTP proxy" Type="Variable" Display="always" Required="true" Mask="false">user</Config>
+  <Config Name="TINYPROXY_PASSWORD" Target="TINYPROXY_PASSWORD" Default="password" Mode="" Description="Password to use to connect to the HTTP proxy" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="SHADOWSOCKS" Target="SHADOWSOCKS" Default="off|on" Mode="" Description="Enable the internal SOCKS5 proxy Shadowsocks" Type="Variable" Display="always" Required="true" Mask="false">on</Config>
+  <Config Name="SHADOWSOCKS_PORT" Target="SHADOWSOCKS_PORT" Default="8388" Mode="" Description="Change thats if you change the port in SOCKS5" Type="Variable" Display="always" Required="true" Mask="false">8388</Config>
+  <Config Name="SHADOWSOCKS_PASSWORD" Target="SHADOWSOCKS_PASSWORD" Default="" Mode="" Description="Passsword to use to connect to the SOCKS5 proxy" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="SHADOWSOCKS_METHOD" Target="SHADOWSOCKS_METHOD" Default="chacha20-ietf-poly1305" Mode="" Description="Method to use for Shadowsocks https://shadowsocks.org/en/config/quick-guide.html" Type="Variable" Display="always" Required="true" Mask="false">chacha20-ietf-poly1305</Config>
+  <Config Name="OPENVPN_ROOT" Target="OPENVPN_ROOT" Default="no|yes" Mode="" Description="Run OpenVPN as root" Type="Variable" Display="always" Required="true" Mask="false">no</Config>
+  <Config Name="OPENVPN_TARGET_IP" Target="OPENVPN_TARGET_IP" Default="" Mode="" Description="Specify a target VPN server IP address to use (Optional)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OPENVPN_CIPHER" Target="OPENVPN_CIPHER" Default="" Mode="" Description="Specify a custom cipher to use. It will also set ncp-disable if using AES GCM for PIA (Optional)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/pia/" Mode="rw" Description="Data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pia/</Config>
+  <Config Name="DOT_VERBOSITY_DETAILS" Target="DOT_VERBOSITY_DETAILS" Default="0|1|2|3|4" Mode="" Description="Unbound details verbosity level" Type="Variable" Display="advanced-hide" Required="true" Mask="false">0</Config>
+  <Config Name="DOT_VERBOSITY" Target="DOT_VERBOSITY" Default="1|0|2|3|4|5" Mode="" Description="Container Variable: DOT_VERBOSITY" Type="Variable" Display="advanced-hide" Required="true" Mask="false">1</Config>
+  <Config Name="OPENVPN_VERBOSITY" Target="OPENVPN_VERBOSITY" Default="1|0|2|3|4|5|6" Mode="" Description="Openvpn verbosity level" Type="Variable" Display="advanced-hide" Required="true" Mask="false">1</Config>
+  <Config Name="TINYPROXY_LOG" Target="TINYPROXY_LOG" Default="Info|Connect|Notice|Warning|Error|Critical" Mode="" Description="Tinyproxy log level" Type="Variable" Display="advanced-hide" Required="true" Mask="false">Info</Config>
+  <Config Name="UID" Target="UID" Default="99" Mode="" Description="UID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="100" Mode="" Description="GID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="DOT_VALIDATION_LOGLEVEL" Target="DOT_VALIDATION_LOGLEVEL" Default="0|1|2" Mode="" Description="Unbound validation log level" Type="Variable" Display="advanced-hide" Required="true" Mask="false">0</Config>
+  <Config Name="SHADOWSOCKS_LOG" Target="SHADOWSOCKS_LOG" Default="off|on" Mode="" Description="Enable Shadowsocks logging" Type="Variable" Display="advanced-hide" Required="true" Mask="false">off</Config>
+</Container>
