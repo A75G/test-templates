@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>iredmail</Name>
+  <Repository>iredmail/mariadb:nightly</Repository>
+  <Registry>https://hub.docker.com/r/iredmail/mariadb/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/iredmail/mariadb/</Support>
+  <Project/>
+  <Overview>Official dockerized iRedMail (MariaDB edition, all-in-one, based on Alpine).   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Official dockerized iRedMail (MariaDB edition, all-in-one, based on Alpine).   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Host Port 2" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="false" Mask="false">443</Config>
+  <Config Name="Host Port 3" Target="110" Default="110" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">110</Config>
+  <Config Name="Host Port 4" Target="995" Default="995" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">995</Config>
+  <Config Name="Host Port 5" Target="143" Default="143" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">143</Config>
+  <Config Name="Host Port 6" Target="993" Default="993" Mode="tcp" Description="Container Port: 993" Type="Port" Display="always" Required="false" Mask="false">993</Config>
+  <Config Name="Host Port 7" Target="25" Default="25" Mode="tcp" Description="Container Port: 25" Type="Port" Display="always" Required="false" Mask="false">25</Config>
+  <Config Name="Host Port 8" Target="465" Default="465" Mode="tcp" Description="Container Port: 465" Type="Port" Display="always" Required="false" Mask="false">465</Config>
+  <Config Name="Host Port 9" Target="587" Default="587" Mode="tcp" Description="Container Port: 587" Type="Port" Display="always" Required="false" Mask="false">587</Config>
+  <Config Name="Host Path 1" Target="/var/vmail/backup" Default="/mnt/user/appdata/iredmail/data/backup/" Mode="rw" Description="Container Path: /var/vmail/backup" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/backup/</Config>
+  <Config Name="Host Path 2" Target="/var/vmail/vmail1" Default="" Mode="rw" Description="Container Path: /var/vmail/vmail1" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/mailboxes/</Config>
+  <Config Name="Host Path 3" Target="/var/vmail/mlmmj" Default="" Mode="rw" Description="Container Path: /var/vmail/mlmmj" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/mlmmj/</Config>
+  <Config Name="Host Path 4" Target="/var/vmail/mlmmj-archive" Default="" Mode="rw" Description="Container Path: /var/vmail/mlmmj-archive" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/mlmmj-archive/</Config>
+  <Config Name="Host Path 5" Target="/var/vmail/imapsieve_copy" Default="" Mode="rw" Description="Container Path: /var/vmail/imapsieve_copy" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/imapsieve_copy/</Config>
+  <Config Name="Host Path 6" Target="/opt/iredmail/custom" Default="" Mode="rw" Description="Container Path: /opt/iredmail/custom" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/custom/</Config>
+  <Config Name="Host Path 7" Target="/opt/iredmail/ssl" Default="" Mode="rw" Description="Container Path: /opt/iredmail/ssl" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/ssl/</Config>
+  <Config Name="Host Path 8" Target="/var/lib/mysql" Default="" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/mysql/</Config>
+  <Config Name="Host Path 9" Target="/var/lib/clamav" Default="" Mode="rw" Description="Container Path: /var/lib/clamav" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/clamav/</Config>
+  <Config Name="Host Path 10" Target="/var/lib/spamassassin" Default="" Mode="rw" Description="Container Path: /var/lib/spamassassin" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/iredmail/data/sa_rules/</Config>
+  <Config Name="Host Key 1" Target="HOSTNAME" Default="mail.mydomain.com" Mode="" Description="Container Variable: HOSTNAME" Type="Variable" Display="always" Required="false" Mask="false">mail.domain.me</Config>
+  <Config Name="FIRST_MAIL_DOMAIN" Target="FIRST_MAIL_DOMAIN" Default="" Mode="" Description="Container Variable: FIRST_MAIL_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">domain.me</Config>
+  <Config Name="FIRST_MAIL_DOMAIN_ADMIN_PASSWORD" Target="FIRST_MAIL_DOMAIN_ADMIN_PASSWORD" Default="my-secret-password" Mode="" Description="Container Variable: FIRST_MAIL_DOMAIN_ADMIN_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">my-secret-password</Config>
+  <Config Name="MLMMJADMIN_API_TOKEN" Target="MLMMJADMIN_API_TOKEN" Default="" Mode="" Description="Container Variable: MLMMJADMIN_API_TOKEN" Type="Variable" Display="always" Required="false" Mask="false">tRjg8syF9Wl947ksuru/CrwMZ6JYEZNdG+5MPvDfkWk=</Config>
+  <Config Name="ROUNDCUBE_DES_KEY" Target="ROUNDCUBE_DES_KEY" Default="" Mode="" Description="Container Variable: ROUNDCUBE_DES_KEY" Type="Variable" Display="always" Required="false" Mask="false">nfIV0U7m37SZfPNdnxucOzSBMYTHXKOb</Config>
+</Container>
